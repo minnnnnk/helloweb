@@ -10,9 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-/**
- * Servlet implementation class Gugudan
- */
+
 @WebServlet("/Gugudan")
 public class Gugudan extends HttpServlet {
 	//필드
@@ -30,7 +28,8 @@ public class Gugudan extends HttpServlet {
 		//코드
 		int dan = Integer.parseInt(request.getParameter("dan"));
 		
-		out.println("<table border = '1'>");
+		
+		out.println("<table border ='1'>");
 		
 		for(int i = 1; i<=9; i++) {
 			out.println("	<tr>");
@@ -38,9 +37,9 @@ public class Gugudan extends HttpServlet {
 			out.println("		<td>"+ i +"</td>");
 			out.println("		<td>"+dan*i+"</td>");
 			out.println("	</tr>");
-			out.println("</table>");
+			
 		}
-		
+		out.println("</table>");
 	}
 
 
